@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>/zero/contacts</title>
+    <link rel="stylesheet" href="style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="funcs.js"></script>
+</head>
+<body>
+<img class="bg" src="imgs/bg5.jpg">
+<nav>
+    <a class="entry" onclick="go_home()">Home</a>
+    <a class="entry" onclick="go_projects()">Projects</a>
+    <a class="entry" onclick="go_contacts()">Contacts</a>
+    <a class="entry" onclick="open_url('https://gitlab.com/kostya-zero/website')">Sources</a>
+</nav>
+<div class="title-div">
+    <a class="title">Konstantin Zero</a>
+</div>
+
+<div class="main">
+    <a class="h1">Contacts</a>
+    <a class="text">
+        There is all available methods how to contact me or where I post blogs or active.
+    </a>
+</div>
+
+<div class="main">
+    <a class="h1">Chats</a>
+    <a class="text">
+        <div class="card" onclick="open_url('https://matrix.to/#/@kostya_zer0:debilosempire.org')">
+            <a class="card-title" style="color: #8ce28b">Matrix</a>
+            <a class="card-text">Talk to me in Matrix. Best way to contact.</a>
+        </div>
+        <div class="card" onclick="open_url('https://t.me/kostya_zer0')">
+            <a class="card-title" style="color: #8be2d2">Telegram</a>
+            <a class="card-text">Talk to me in Telegram. Can be unreachable.</a>
+        </div>
+        <div class="card" onclick="copy('.ZΞRO#4731')">
+            <a class="card-title" style="color: #a48be2">Discord</a>
+            <a class="card-text">Talk to me on Discord. Proprietary 💀.</a>
+        </div>
+    </a>
+</div>
+
+<div class="main">
+    <a class="h1">Social</a>
+    <a class="text">
+        <div class="card" onclick="open_url('https://fedi.debilosempire.org/@kostya_zer0')">
+            <a class="card-title" style="color: #dce28b">Misskey</a>
+            <a class="card-text">Take a look at my profile on Misskey instance.</a>
+        </div>
+    </a>
+</div>
+
+<footer>
+    <a class="ft-header">Made by kostya_zero with love. Hosted on github-pages.</a>
+</footer>
+</body>
+</html>

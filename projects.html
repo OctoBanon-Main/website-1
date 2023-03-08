@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>/zero/projects</title>
+    <link rel="stylesheet" href="style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="funcs.js"></script>
+</head>
+<body>
+<img class="bg" src="imgs/bg.jpg">
+<nav>
+    <a class="entry" onclick="go_home()">Home</a>
+    <a class="entry" onclick="go_projects()">Projects</a>
+    <a class="entry" onclick="go_contacts()">Contacts</a>
+    <a class="entry" onclick="open_url('https://gitlab.com/kostya-zero/website')">Sources</a>
+</nav>
+<div class="title-div">
+    <a class="title">Konstantin Zero</a>
+</div>
+
+<div class="main">
+    <a class="h1">My projects</a>
+    <a class="text">
+        Here I placed my major and interesting projects that you can look at.
+        If you like them, give a star for their repository.
+        It's motivates me to continue work on them.
+    </a>
+</div>
+
+<div class="main">
+    <a class="h1">Pipe</a>
+    <a class="text">
+        Pipe is a build system for projects written in Python.
+        They use Nuitka, which uses C compilers to compile applications and makes them fast and independent of Python runtime.
+        Currently, Pipe supported only on Linux.
+    </a>
+    <div class="buttons-div">
+        <button class="gl-button" onclick="open_url('https://gitlab.com/kostya-zero/pipe')">GitLab</button>
+        <button class="gh-button" onclick="open_url('https://github.com/kostya-zero/pipe')">GitHub</button>
+    </div>
+
+</div>
+
+<div class="main">
+    <a class="h1">zeroProbe</a>
+    <a class="text">
+        zeroProbe is a compact and simple application focus on testing things.
+        You can test everything, from building an application to test runs with different arguments.
+        zeroProbe are open-source project and absolutely free.
+        It has not too much functionality, but in the feature it will increase.
+    </a>
+    <div class="buttons-div">
+        <button class="gl-button" onclick="open_url('https://gitlab.com/kostya-zero/zeroprobe')">GitLab</button>
+        <button class="gh-button" onclick="open_url('https://github.com/kostya-zero/zeroProbe')">GitHub</button>
+    </div>
+</div>
+
+<div class="main">
+    <a class="h1">Waller</a>
+    <a class="text">
+        Waller is a small application that will help you apply pictures as wallpaper with tools like swaybg or feh.
+        It allows you to easily apply them with a single command and a simple setup.
+        My first project written in Rust.
+    </a>
+    <div class="buttons-div">
+        <button class="gl-button" onclick="open_url('https://gitlab.com/kostya-zero/waller')">GitLab</button>
+        <button class="gh-button" onclick="open_url('https://github.com/kostya-zero/waller')">GitHub</button>
+    </div>
+</div>
+
+<footer>
+    <a class="ft-header">Made by kostya_zero with love. Hosted on github-pages.</a>
+</footer>
+</body>
+</html>

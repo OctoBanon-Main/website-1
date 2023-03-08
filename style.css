@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;800&display=swap');
+
+* {
+    font-family: "Open Sans", monospace;
+    color: #fff;
+}
+
+body {
+    background-color: #111111;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+    width: 500px;
+    margin: auto;
+}
+
+.title {
+    font-family: "Kaushan Script", cursive;
+    font-weight: 800;
+    font-size: 72px;
+    text-shadow: 0px 0px 5px rgba(17, 17, 17, 0.35);
+}
+
+.entry {
+    font-size: 18px;
+    margin: 0 15px 0 15px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all .2s ease-in-out;
+    text-shadow: 0px 0px 5px rgba(17, 17, 17, 0.35);
+}
+
+.entry:hover {
+    background-color: white;
+    color: #111111;
+    transform: scale(1.1);
+    cursor: pointer;
+    text-shadow: none;
+}
+
+.title-div {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+}
+
+.h1 {
+    font-weight: 800;
+    font-size: 46px;
+}
+
+.bg {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    filter: brightness(70%);
+    height: 350px;
+    object-fit: cover;
+    max-width: 100%;
+    border-radius: 0 0 15px 15px;
+    box-shadow: rgba(121, 121, 121, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.text {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+footer {
+    width: 440px;
+    height: 25px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto 50px;
+}
+
+.ft-header {
+    font-weight: 600;
+}
+
+.main {
+    margin-top: 25px;
+    padding: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    display: grid;
+    align-items: center;
+    background-color: #1a1a1a;
+    max-width: 800px;
+    border-radius: 10px;
+    border: 1px solid #3d3d3d;
+    box-shadow: rgba(121, 121, 121, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.notes {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 16px;
+    color: #8c8c8c;
+}
+
+u {
+    text-decoration: none;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.embed {
+    width: 800px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.buttons-div {
+    display: inline;
+    margin-left: auto;
+}
+
+.gl-button {
+    background-color: transparent;
+    font-size: 18px;
+    width: 100px;
+    border-radius: 10px;
+    display: inline;
+    font-weight: 600;
+    height: 45px;
+    outline: none;
+    border: 2px solid #8f6c21;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all .1s ease-in-out;
+}
+
+.gl-button:hover {
+    background-color: #8f6c21;
+}
+
+.gh-button {
+    background-color: transparent;
+    font-size: 18px;
+    width: 100px;
+    border-radius: 10px;
+    display: inline;
+    font-weight: 600;
+    height: 45px;
+    outline: none;
+    border: 2px solid #3f3f3f;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all .1s ease-in-out;
+}
+
+.gh-button:hover {
+    background-color: #3f3f3f;
+}
+
+.card {
+    background-color: #1f1f1f;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid #3d3d3d;
+    box-shadow: rgba(121, 121, 121, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    padding: 15px;
+    font-size: 22px;
+    display: inline;
+    cursor: pointer;
+    max-width: 800px;
+    transition: all .2s ease-in-out;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: rgba(121, 121, 121, 0.45) 0px 13px 27px -5px, rgba(0, 0, 0, 0.5) 0px 8px 16px -8px;
+}
+
+.card-title {
+    font-weight: 800;
+}
+
+.card-text {
+    margin-left: 10px;
+}
+
+@media only screen and (max-width: 576px) {
+    .title {
+        font-size: 45px;
+    }
+
+    .title-div {
+        width: 350px;
+    }
+
+    .entry {
+        font-size: 16px;
+        margin: 0 5px 0 5px;
+    }
+
+    nav {
+        width: 360px;
+    }
+
+    .h1 {
+        font-size: 40px;
+    }
+
+    .text {
+        font-size: 20px;
+    }
+
+    .embed {
+        width: 370px;
+    }
+}
