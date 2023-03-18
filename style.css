@@ -13,12 +13,16 @@ body {
 }
 
 nav {
+    background-color: #1f1f1f;
     display: flex;
     justify-content: center;
+    position: relative;
     align-items: center;
-    padding-top: 25px;
-    width: 500px;
-    margin: auto;
+    top: 15px;
+    width: 460px;
+    border-radius: 10px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .title {
@@ -46,9 +50,10 @@ nav {
 }
 
 .title-div {
-    margin-top: 10px;
+    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,6 +63,7 @@ nav {
 .h1 {
     font-weight: 800;
     font-size: 46px;
+    color: #dee2e6;
 }
 
 .bg {
@@ -69,7 +75,7 @@ nav {
     object-fit: cover;
     max-width: 100%;
     border-radius: 0 0 15px 15px;
-    box-shadow: rgba(121, 121, 121, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    box-shadow: rgba(52, 58, 64, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .text {
@@ -77,10 +83,11 @@ nav {
     margin-bottom: 5px;
     font-size: 20px;
     font-weight: 400;
+    color: #ced4da;
 }
 
 footer {
-    width: 440px;
+    max-width: 440px;
     height: 25px;
     text-align: center;
     align-items: center;
@@ -102,14 +109,14 @@ footer {
     background-color: #1a1a1a;
     max-width: 800px;
     border-radius: 10px;
-    border: 1px solid #3d3d3d;
-    box-shadow: rgba(121, 121, 121, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border: 1px solid #282828;
+    box-shadow: rgba(52, 58, 64, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .notes {
     font-family: "JetBrains Mono", monospace;
     font-size: 16px;
-    color: #8c8c8c;
+    color: #c6ac8f;
 }
 
 u {
@@ -120,7 +127,7 @@ u {
 }
 
 .embed {
-    width: 800px;
+    max-width: 800px;
     border-radius: 10px;
     margin-bottom: 10px;
     margin-top: 10px;
@@ -173,30 +180,30 @@ u {
     background-color: #1f1f1f;
     height: auto;
     border-radius: 10px;
-    border: 1px solid #3d3d3d;
-    box-shadow: rgba(121, 121, 121, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border: 1px solid #282828;
     padding: 15px;
     font-size: 22px;
     display: inline;
     cursor: pointer;
     max-width: 800px;
     transition: all .2s ease-in-out;
-
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
 .card:hover {
     transform: scale(1.03);
-    box-shadow: rgba(121, 121, 121, 0.45) 0px 13px 27px -5px, rgba(0, 0, 0, 0.5) 0px 8px 16px -8px;
+    box-shadow: rgba(121, 121, 121, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border: 1px solid #3d3d3d;
 }
 
 .card-title {
     font-weight: 800;
+    color: #ddb892;
 }
 
 .card-text {
-    margin-left: 10px;
+    margin-left: 5px;
 }
 
 @media only screen and (max-width: 576px) {
@@ -218,7 +225,7 @@ u {
     }
 
     .h1 {
-        font-size: 40px;
+        font-size: 34px;
     }
 
     .text {
@@ -226,6 +233,10 @@ u {
     }
 
     .embed {
-        width: 370px;
+        max-width: 420px;
+    }
+    
+    footer {
+        font-size: 14px;
     }
 }
